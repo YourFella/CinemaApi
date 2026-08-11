@@ -85,5 +85,5 @@ Navigate to https://localhost:<port>/swagger (or check your console output for t
 2. Migration problem. Not realy for a demo, but on real project better to use *donet ef migrations*.
 3. Obviously: no auth. *app.UseAuthorization()* isinvoked but there is nothing behind it right now.
 4. Visible problem with try/cathes (specifically in *ReservationsController*). This could throw unexpected errors and cause problems down the line.
-5. *ReserveSeats* and *ReserveContiguousSeats* almost identical and could be joined into interface !!!!! CHANGE THAT !!!!!
-6. Normal form in DB. *AppDbContext* from *OnModelCreating* have n-to-n between Reservation and Seat without implicit join-table it could be problem in future "is X seat free" requests.
+5. *ReserveSeats* and *ReserveContiguousSeats* almost identical and could be joined into interface *(maybe)*
+6. Normal form in DB. *AppDbContext* from *OnModelCreating* have n-to-n between Reservation and Seat without implicit join-table it could be problem in future "is X seat free" requests. *(but that's related to DB architecture)*
