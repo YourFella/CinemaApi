@@ -81,7 +81,7 @@ Navigate to https://localhost:<port>/swagger (or check your console output for t
 
 # What to change!!!
 
-1. DB is commited in repo. Better to add in .gitignore *!Done?!*
+1. DB is commited in repo. Better to add in .gitignore
 2. Migration problem. Not realy for a demo, but on real project better to use *donet ef migrations*.
 3. Obviously: no auth. *app.UseAuthorization()* isinvoked but there is nothing behind it right now.
 4. Visible problem with try/cathes (specifically in *ReservationsController*). This could throw unexpected errors and cause problems down the line.
